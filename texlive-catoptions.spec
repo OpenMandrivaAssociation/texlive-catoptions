@@ -1,3 +1,9 @@
+# revision 24027
+# category Package
+# catalog-ctan /macros/latex/contrib/catoptions
+# catalog-date 2011-09-19 16:10:24 +0200
+# catalog-license lppl1.3
+# catalog-version 0.2.6
 Name:		texlive-catoptions
 Version:	0.2.6
 Release:	1
@@ -44,6 +50,7 @@ in addition to many other TeX programming tools.
 %doc %{_texmfdistdir}/doc/latex/catoptions/README
 %doc %{_texmfdistdir}/doc/latex/catoptions/catoptions-guide.pdf
 %doc %{_texmfdistdir}/doc/latex/catoptions/catoptions-guide.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ in addition to many other TeX programming tools.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
