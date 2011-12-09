@@ -1,11 +1,11 @@
-# revision 24027
+# revision 24654
 # category Package
 # catalog-ctan /macros/latex/contrib/catoptions
-# catalog-date 2011-09-19 16:10:24 +0200
+# catalog-date 2011-11-20 11:43:03 +0100
 # catalog-license lppl1.3
-# catalog-version 0.2.6
+# catalog-version 0.2.7
 Name:		texlive-catoptions
-Version:	0.2.6
+Version:	0.2.7
 Release:	1
 Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
@@ -17,31 +17,32 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package changes package loading internals so that all
 subsequently loaded packages can rely on normal/standard
 catcodes of all ASCII characters. The package defines canonical
 control sequences to represent all the visible ASCII
-characters. It also provides robust option parsing mechanisms,
-in addition to many other TeX programming tools.
+characters. It also provides robust option parsing mechanisms
+(XDeclareOption, XExecuteOptions and XProcessOptions, which
+will be used by \documentclass if the package has already been
+loaded). The package also provides a range of other TeX
+programming tools.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
