@@ -29,16 +29,8 @@ will be used by \documentclass if the package has already been
 loaded). The package also provides a range of other TeX
 programming tools.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -52,7 +44,6 @@ programming tools.
 %doc %{_texmfdistdir}/doc/latex/catoptions/README
 %doc %{_texmfdistdir}/doc/latex/catoptions/catoptions-guide.pdf
 %doc %{_texmfdistdir}/doc/latex/catoptions/catoptions-guide.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,5 +54,3 @@ programming tools.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
