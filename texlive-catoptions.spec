@@ -1,12 +1,12 @@
-# revision 28015
+# revision 24899
 # category Package
 # catalog-ctan /macros/latex/contrib/catoptions
-# catalog-date 2012-10-15 16:33:02 +0200
+# catalog-date 2011-12-19 23:56:31 +0100
 # catalog-license lppl1.3
-# catalog-version 0.2.7e
+# catalog-version 0.2.7b
 Name:		texlive-catoptions
-Version:	0.2.7e
-Release:	1
+Version:	0.2.7b
+Release:	2
 Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
@@ -54,3 +54,27 @@ programming tools.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2.7b-2
++ Revision: 750037
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2.7b-1
++ Revision: 745161
+- texlive-catoptions
+
+* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2.7a-1
++ Revision: 743242
+- texlive-catoptions
+- texlive-catoptions
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2.6-1
++ Revision: 718014
+- texlive-catoptions
+- texlive-catoptions
+- texlive-catoptions
+- texlive-catoptions
+- texlive-catoptions
+
