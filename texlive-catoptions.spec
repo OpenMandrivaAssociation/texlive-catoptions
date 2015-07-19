@@ -6,7 +6,7 @@
 # catalog-version 0.2.7f
 Name:		texlive-catoptions
 Version:	0.2.7f
-Release:	8
+Release:	9
 Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
