@@ -1,12 +1,6 @@
-# revision 28331
-# category Package
-# catalog-ctan /macros/latex/contrib/catoptions
-# catalog-date 2012-11-22 12:57:51 +0100
-# catalog-license lppl1.3
-# catalog-version 0.2.7f
 Name:		texlive-catoptions
-Version:	0.2.7f
-Release:	9
+Version:	0.2.7h
+Release:	1
 Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
@@ -39,11 +33,8 @@ programming tools.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/catoptions/catoptions-guide.cfg
-%{_texmfdistdir}/tex/latex/catoptions/catoptions.sty
-%doc %{_texmfdistdir}/doc/latex/catoptions/README
-%doc %{_texmfdistdir}/doc/latex/catoptions/catoptions-guide.pdf
-%doc %{_texmfdistdir}/doc/latex/catoptions/catoptions-guide.tex
+%{_texmfdistdir}/tex/latex/catoptions
+%doc %{_texmfdistdir}/doc/latex/catoptions
 
 #-----------------------------------------------------------------------
 %prep
