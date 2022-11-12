@@ -1,12 +1,12 @@
 Name:		texlive-catoptions
-Version:	0.2.7h
-Release:	2
+Version:	35069
+Release:	1
 Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.r35069.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.doc.r35069.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +24,12 @@ loaded). The package also provides a range of other TeX
 programming tools.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -38,7 +38,7 @@ programming tools.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
