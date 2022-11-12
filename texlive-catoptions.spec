@@ -5,8 +5,8 @@ Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.r35069.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.doc.r35069.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
