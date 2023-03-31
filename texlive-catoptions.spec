@@ -1,6 +1,6 @@
 Name:		texlive-catoptions
 Version:	35069
-Release:	1
+Release:	2
 Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
