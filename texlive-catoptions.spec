@@ -3,7 +3,7 @@ Version:	68982
 Release:	1
 Summary:	Preserving and recalling standard catcodes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/catoptions
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/catoptions.doc.r%{version}.tar.xz
